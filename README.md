@@ -4,9 +4,10 @@
 * Java 14
 * Spring Boot v2.2.7
 * Spring Security LDAP
-* [unboundid-ldapsdk as LDAP][1]
+* unboundid-ldapsdk
 
-[1]: See the file [test-ldap.lidf](https://github.com/Avec112/spring-security-ldap/blob/master/src/main/resources/test-ldap.ldif)
+## LDAP config
+See the file [test-ldap.lidf](https://github.com/Avec112/spring-security-ldap/blob/master/src/main/resources/test-ldap.ldif)
 
 ## How to
 * Start server
