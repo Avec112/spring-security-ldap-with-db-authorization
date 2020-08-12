@@ -1,4 +1,5 @@
 # Login Demo 
+Demonstration of web application login using LDAP and Spring Boot. 
 
 ## Relevant technology 
 * Java 14
