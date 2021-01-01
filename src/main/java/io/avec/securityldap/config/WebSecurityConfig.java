@@ -13,13 +13,11 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     protected void configure(HttpSecurity http) throws Exception {
         http
                 .authorizeRequests()
-                    .antMatchers("/", "/home").permitAll() // Open for all
+                    .antMatchers("/").permitAll() // Open for all
                     .anyRequest().authenticated() // All others requires authentication
                     .and()
                 .formLogin()
-//                    .loginPage("/login") // requires /login page to exist
-                        .defaultSuccessUrl("/hello", true)
-                    .permitAll() // when login ok, permit all
+                    .defaultSuccessUrl("/hello", true)
                     .and()
                 .logout().logoutSuccessUrl("/");
     }
