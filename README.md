@@ -1,9 +1,9 @@
 # Login Demo 
 Demonstration of web application login using LDAP and Spring Boot. 
 
-## Relevant technology 
-* Java 14
-* Spring Boot v2.2.7
+## Dependencies 
+* Java 11
+* Spring Boot v2.4.0
 * Spring Security LDAP
 * unboundid-ldapsdk
 
