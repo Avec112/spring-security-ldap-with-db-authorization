@@ -7,8 +7,11 @@
 <body>
 
 <h1>Welcome '<span th:text="${user}"></span>'</h1>
-<p>Can also display user name with <b>${#httpServletRequest.remoteUser}</b>. </p>
 <p>Hello '<span th:inline="text">[[${#httpServletRequest.remoteUser}]]</span>'</p>
+<p th:each="authority : ${#authentication.getAuthorities()}"
+   th:if="${authority.getAuthority().startsWith('ROLE_')}"
+   th:text="${authority.getAuthority().replaceFirst('ROLE_', '')}">
+</p>
 <form th:action="@{/logout}" method="post">
     <input type="submit" value="Sign Out"/>
 </form>
