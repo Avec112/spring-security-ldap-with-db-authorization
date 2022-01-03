@@ -1,5 +1,5 @@
 # Login Demo 
-Demonstration of web application login using LDAP, JPA and Spring Boot. 
+Demonstration of web application login using Spring Security LDAP, Spring Data JPA and Spring Boot. 
 This demo combines LDAP authentication and fetches authorities (roles for authorization) from database with help of JPA. 
 Authentication is implemented, but Authorization is not. 
 
